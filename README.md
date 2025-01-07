@@ -1,4 +1,4 @@
-# 🔍 **Analisis Sentimen Maxstream Menggunakan ML dan LSTM**
+# 🔍 **Analisis Sentimen Ulasan Aplikasi Maxstream (Tekomsel) Menggunakan ML dan LSTM**
 
 Proyek ini bertujuan untuk menganalisis sentimen pengguna terhadap layanan Maxstream dengan menggunakan algoritma Machine Learning (ML) dan model Neural Network (NN). Kami mengevaluasi bagaimana opini publik terhadap Maxstream yang didapat dari data komentar dan ulasan.
 
