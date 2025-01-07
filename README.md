@@ -1,4 +1,4 @@
-# 🔍 **Analisis Sentimen Maxstream Menggunakan ML dan NN**
+# 🔍 **Analisis Sentimen Maxstream Menggunakan ML dan LSTM**
 
 Proyek ini bertujuan untuk menganalisis sentimen pengguna terhadap layanan Maxstream dengan menggunakan algoritma Machine Learning (ML) dan model Neural Network (NN). Kami mengevaluasi bagaimana opini publik terhadap Maxstream yang didapat dari data komentar dan ulasan.
 
@@ -22,7 +22,7 @@ Proyek ini bertujuan untuk menganalisis sentimen pengguna terhadap layanan Maxst
   - Tokenisasi
   - Lowercasing
   - Menghapus tanda baca dan stopwords
-
+- **Sequencing**: Mengubah teks menjadi urutan angka dengan teknik word embedding.
 
 ---
 
@@ -34,7 +34,7 @@ Kami menggunakan dua model utama untuk menganalisis sentimen:
 - **Precision**: 81.79%
 - **Recall**: 81.80%
 
-### 2. **Neural Network (NN)**
+### 2. **Long Short-Term Memory (LSTM)**
 - **Epoch 10/10**  
   - **Akurasi**: 90.25%
   - **Loss**: 0.2152
@@ -50,7 +50,7 @@ Kami menggunakan dua model utama untuk menganalisis sentimen:
 2. **Feature Engineering**: Menggunakan embedding teks untuk mendukung analisis mendalam.
 3. **Pelatihan Model**:
    - Melatih model SVM dengan data term frequency-inverse document frequency (TF-IDF).
-   - Melatih model Neural Network dengan representasi vektor teks.
+   - Melatih model LSTM dengan representasi vektor teks.
 4. **Evaluasi Model**: Membandingkan hasil prediksi dengan data validasi menggunakan metrik akurasi, precision, dan recall.
 
 ---
@@ -61,10 +61,10 @@ Kami menggunakan dua model utama untuk menganalisis sentimen:
 | Model | Akurasi | Precision | Recall |
 |-------|---------|-----------|--------|
 | SVM   | 81.80%  | 81.79%    | 81.80% |
-| NN    | 90.25% (train), 81.14% (val) | 87.83% (train), 77.40% (val) | 89.54% (train), 79.56% (val) |
+| LSTM  | 90.25% (train), 81.14% (val) | 87.83% (train), 77.40% (val) | 89.54% (train), 79.56% (val) |
 
 **Kesimpulan Awal**:
-- Model Neural Network menunjukkan performa tinggi pada data training namun perlu dioptimalkan untuk data validasi.
+- Model LSTM menunjukkan performa tinggi pada data training namun perlu dioptimalkan untuk data validasi.
 - Model SVM stabil dan cukup andal untuk analisis sentimen awal.
 
 ### **Distribusi Sentimen**
@@ -76,7 +76,7 @@ Kami menggunakan dua model utama untuk menganalisis sentimen:
 ## 💻 **Teknologi yang Digunakan**
 
 - **Python**: Pengolahan data dan pemodelan.
-- **TensorFlow & Keras**: Membangun dan melatih model Neural Network.
+- **TensorFlow & Keras**: Membangun dan melatih model LSTM.
 - **Scikit-learn**: Implementasi model SVM.
 - **NLTK & SpaCy**: Preprocessing data teks.
 - **Matplotlib & Seaborn**: Visualisasi hasil analisis.
@@ -86,12 +86,12 @@ Kami menggunakan dua model utama untuk menganalisis sentimen:
 ## 📈 **Visualisasi**
 Kami menyediakan grafik untuk:
 - Perbandingan distribusi sentimen positif dan negatif.
-- Kurva loss dan akurasi selama pelatihan Neural Network.
-- Confusion matrix untuk SVM dan Neural Network.
+- Kurva loss dan akurasi selama pelatihan LSTM.
+- Confusion matrix untuk SVM dan LSTM.
 
 ---
 
 ## 🔗 **Langkah Selanjutnya**
-1. **Optimasi Model Neural Network**: Menggunakan hyperparameter tuning untuk meningkatkan performa pada data validasi.
+1. **Optimasi Model LSTM**: Menggunakan hyperparameter tuning untuk meningkatkan performa pada data validasi.
 2. **Analisis Lanjutan**: Mengidentifikasi tema utama dalam sentimen negatif.
 3. **Penerapan**: Mengembangkan dashboard interaktif untuk memvisualisasikan hasil analisis secara real-time.
